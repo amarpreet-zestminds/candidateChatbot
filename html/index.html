@@ -1,0 +1,88 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://d19givamzk6cni.cloudfront.net/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://d19givamzk6cni.cloudfront.net/css/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet" />
+    <link href="https://d19givamzk6cni.cloudfront.net/candChatbot/css/style.css" rel="stylesheet" />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div class="formchatbutton">
+      <button class="btn btn-primary" id="btn-chat" type="button"><img src="https://d19givamzk6cni.cloudfront.net/./img/logo.png"></img></button>
+    </div>
+    <div class="candidatesupport" id="candidatesupport">
+      <div class="loader" id="loader">
+        <div class="spinner"></div>
+      </div>
+      <div class="candidatesupportheader">
+          <div class="logotextsupport"> 
+            <img src="https://d19givamzk6cni.cloudfront.net/./img/logo.png">
+            <span class="logotext1">Candidate Support</span>
+          </div>
+          <div class="sidebaricon">
+            <p id="minimize_button" class="minimize-button"><i class="far fa-window-minimize"></i></p>
+            <p id="close-support"><i class="fas fa-times"></i></p>
+          </div>
+      </div>
+      
+      <div class="initialChatDiv" id="initialChatDiv">
+      
+      <div class="supportcandidateform">
+        <form id="initiateChatForm">
+          <div class="formgroup">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp">
+          </div>
+          <div class="formgroup">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class="formgroup">
+            <label for="event_id" class="form-label">Event ID <span class="tooltip"> <i class="fas fa-question-circle" > <span class="tooltiptext">Your Event ID is a 16 Digit Code (XXX-***-***-***) and is located in the assessment invite email you received, usually beneath the Testing Center URL. If you don't know, leave it blank.</span></i></span> </label>
+            <input type="text" class="form-control" id="event_id">
+          </div>
+          <div class="formgroup">
+            <label for="emp_name" class="form-label">Prospective Employer's Name <span class="tooltip"> <i class="fas fa-question-circle" > <span class="tooltiptext">Please enter the name of the employer you're applying for. If this isn't applicable to you, please leave blank.</span></i></span> </label>
+            <input type="text" class="form-control" id="emp_name" name="emp_name">
+          </div>
+          <div class="termscondition">
+            <p>Using our chat means we collect basic info to assist you. See our <a href="https://ondemandassessment.com/home/privacy" target="_blank">privacy policy</a>
+for details.</p>
+          </div>
+          <div class="supportinnerbtn">
+            <button type="submit" id="initialSubmitButton" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+        <div id="responseMessage" class="mt-3"></div>
+      </div>
+
+    </div>
+
+    <div class="ContinueChatDiv" id="ContinueChatDiv">
+      <div class="checkchat">
+        <div class="supportcandidateform" >
+          <div id="chatContainer" class="candidatesupportlink">
+            <!-- Initial Message get from db -->
+
+          </div>
+        </div>
+      </div>
+      <div class="candidatechat">
+        <div id="typingIndicator" class="typing-indicator-container"></div>
+        <div class="candiatetextatra">
+          <textarea class="form-control" id="userMessage" placeholder="Type your message here..." required></textarea>
+         <i class="fas fa-play" id="sendMessage"></i>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <script src="https://d19givamzk6cni.cloudfront.net/js/bootstrap.bundle.min.js"></script>
+    <script src="https://d19givamzk6cni.cloudfront.net/js/jquery.min.js"></script>
+    <script src="https://d19givamzk6cni.cloudfront.net/js/jquery.validate.min.js"></script>
+    <script src="https://d19givamzk6cni.cloudfront.net/candChatbot/js/main.js"></script>
+  </body>
+</html>
