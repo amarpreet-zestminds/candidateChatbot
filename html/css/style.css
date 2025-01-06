@@ -1,0 +1,359 @@
+ul li {
+	list-style: none;
+}
+li {
+	list-style-type: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0px;
+	padding: 0px;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 0rem rgba(49,132,253,.5);
+}
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0rem rgba(49,132,253,.5);
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #000000;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(13,110,253,.25);
+}
+.formchatbutton .btn-primary{
+    position: fixed;
+    cursor: pointer;
+    bottom: 30px;
+    right: 50px;
+    border: transparent;
+    padding: 15px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #002554;
+}
+.formchatbutton .btn-primary img {
+    width: 24px;
+}
+.candidatesupportheader {
+    background-color: #002554;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    justify-content: space-between;
+    position: fixed;
+    width: 600px;
+    z-index: 9;
+}
+.logotextsupport{
+    display: flex;
+}
+.candidatesupportheader img{
+    width: 30px;
+    margin-right: 10px;
+}
+.candidatesupport {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /* padding: 30px 0; */
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    background: #fff;
+    z-index: 9999;
+    margin: 20px;
+    transition: max-height 0.9s ease, opacity 0.5s ease;
+}
+#close-support {
+    cursor: pointer;
+}
+.supportcandidateform {
+    padding: 15px 10px 29px 23px;
+    margin-top: 5.5rem;
+}
+.supportcandidateform .formgroup .form-label {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+.supportcandidateform .formgroup {
+    margin-bottom: 16px;
+}
+.supportcandidateform .formgroup .tooltip .fas.fa-question-circle {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+.supportcandidateform .formgroup .tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+  }
+  .supportcandidateform .formgroup .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 320px;
+    background-color: #002554;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+}
+  
+.supportcandidateform .formgroup .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .supportinnerbtn{
+    text-align: center;
+  }
+  .supportinnerbtn .btn-primary {
+    background-color: #002554;
+    border: 0;
+    padding: 8px 40px 8px 40px;
+    border-radius: 12px;
+}
+  .candidatesupport {
+    display: none; /* Initially hidden */
+  }
+  
+  .candidatesupport.active {
+    display: block; /* Visible when active */
+  }
+  /* .candidatesupportlink {
+    text-align: center;
+} */
+.messageheader {
+    display: flex;
+    justify-content: space-between;
+}
+.incomingmessage{
+    color: rgb(34, 34, 34);
+    background: rgb(237, 237, 237);
+    padding: 14px;
+}
+.outgoingmessage{
+    background: rgb(215 215 215);
+    /* text-align: right; */
+}
+.messagebody {
+    margin-top: 6px;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 15px 10px 15px;
+}
+.candiatetextatra {
+    padding: 0 9px 0 23px;
+    position: relative;
+}
+.candiatetextatra .fas.fa-play {
+    position: absolute;
+    top: 13px;
+    right: 25px;
+    color: #000000;
+    cursor: pointer;
+}
+.candiatetextatra textarea{
+    height: 42px;
+    resize: none;
+    /* padding: 0 13px 0 12px; */
+}
+.endchatbutton {
+    text-align: center;
+    margin-top: 20px;
+}
+.endchatbutton .btn-primary {
+    color: #fff;
+    background-color: #002554;
+    border: 0;
+    border-radius: 12px;
+}
+.mainmessage {
+    margin-bottom: 20px;
+}
+.sidebaricon {
+    display: flex;
+}
+.sidebaricon p .far.fa-window-minimize {
+    margin-right: 20px;
+    position: relative;
+    top: -5px;
+}
+.messagebody ul{
+    margin-left: 20px;
+}
+.messagebody ul li{
+    list-style-type: disc !important;
+}
+.termscondition p a {
+    color: #002554;
+}
+/* .checkchat {
+    height: 600px;
+    overflow-y: scroll;
+    padding-bottom: 8rem;
+} */
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+.candidatechat {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    padding: 15px 0;
+}
+
+.logotext1 {
+    font-size: 18px; /* Adjust as needed */
+    font-weight: bold; /* Adjust as needed */
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px; /* Space between the image and text */
+}
+
+@media screen and (max-width: 767px) {
+    .candidatesupport {
+        width: 90%;
+    }
+    .logotextsupport {
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .candidatesupportheader {
+        background-color: #002554;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        justify-content: space-between;
+        position: fixed;
+        width: 90%;
+        z-index: 9;
+    }
+    .supportcandidateform .formgroup .tooltip .fas.fa-question-circle {
+        font-size: 14px;
+    }
+    .supportcandidateform .formgroup .tooltip .tooltiptext {
+        width: 160px;
+    }
+    .supportinnerbtn {
+        text-align: center;
+        margin-top: 20px;
+    }
+  }
+  
+  .loader {
+    position: absolute; /* Position relative to the chatbot container */
+    top: 50%; /* Center vertically within the chatbot */
+    left: 50%;
+    width: 100%; /* Cover the entire chatbot container */
+    height: 100%; /* Cover the entire chatbot container */
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    display: flex;
+    justify-content: center; /* Center spinner horizontally */
+    align-items: center; /* Center spinner vertically */
+    z-index: 9999; /* Ensure it stays above other elements */
+    display: none; /* Initially hidden */
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ccc;
+    border-top-color: #002554;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.minimize-button:hover{
+    cursor: pointer;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.typing-indicator-container {
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #002554;
+    margin-bottom: 10px;
+    display: none; /* Hidden by default */
+  }
+  
+  .typing-indicator-container .dots {
+    display: inline-block;
+    font-size: 20px;
+  }
+  
+  .dots span {
+    display: inline-block;
+    animation: blink 1.4s infinite;
+  }
+  
+  .dots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dots span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.dots p{
+    font-size: 11px;
+}
+
+#chatContainer {
+    height: 400px; /* Set appropriate height */
+    overflow-y: auto;
+    padding-bottom: 1rem;
+  }
